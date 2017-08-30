@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+</head>
+<body>
+    <form action="" method="post" name="login">
+        <p>
+            请输入用户名:<br/>
+            {{form.username(size=30)}}<br/>
+        </p>
+        <p>
+            请输入密码：<br/>
+            {{form.password(size=30)}}<br/>
+        </p>
+        {{ form.csrf_token }}
+        <p><input type="submit" value="登陆"></p>
+    </form>
+</body>
+</html>
